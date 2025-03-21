@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  /* width: 16px; */
 }
 
 /* Track */
