@@ -6,12 +6,12 @@ export default function About() {
     <div>
       <Navbar />
       <div className="relative h-screen w-full bg-[url('/images/about_back.webp')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-[#112331] opacity-85"></div>
+        <div className="absolute inset-0 bg-primary opacity-85"></div>
         <div className="relative z-10 mx-auto flex w-[80%] flex-row items-center justify-between text-white">
           <div className="basis-[30%]">
             <h1 className="text-[36px]">
               ABOUT <br></br>
-              <span className="text-[#01eaf9]">PROJECT</span>
+              <span className="text-secondary">PROJECT</span>
             </h1>
           </div>
         </div>

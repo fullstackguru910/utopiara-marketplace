@@ -38,10 +38,10 @@ export default function Invest() {
 
   return (
     <div
-      className="relative min-h-screen w-full bg-[#112331] py-16 text-white"
+      className="relative min-h-screen w-full bg-primary py-16 text-white"
       ref={component}>
       {/* Background */}
-      <div className="absolute inset-0 bg-[#112331] opacity-90"></div>
+      <div className="absolute inset-0 bg-primary opacity-90"></div>
 
       {/* Main Content */}
       <div className="relative z-10 mx-auto w-[90%] max-w-7xl">
@@ -49,7 +49,7 @@ export default function Invest() {
         <h1
           className="animate-title mb-12 text-center text-4xl font-bold tracking-wide md:text-5xl"
           ref={titleComponent}>
-          <span className="text-[#01eaf9]">HOW IT</span> WORKS:
+          <span className="text-secondary">HOW IT</span> WORKS:
         </h1>
 
         {/* Grid Layout: Steps on Left/Right, Image in Center */}
@@ -59,9 +59,9 @@ export default function Invest() {
             className="flex flex-row "
             ref={leftStepsComponent}>
             {/* Step 1 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">1</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">1</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -72,9 +72,9 @@ export default function Invest() {
             </div>
 
             {/* Step 2 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">2</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">2</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -85,9 +85,9 @@ export default function Invest() {
             </div>
 
             {/* Step 3 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">3</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">3</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -113,9 +113,9 @@ export default function Invest() {
             </div>
 
             {/* Step 4 */}
-            <div className="animate-step-left relative flex h-[200px] basis-1/3 items-start gap-4 border-b-[1px] border-l-[1px] border-r-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">4</div>
+            <div className="animate-step-left relative flex h-[200px] basis-1/3 items-start gap-4 border-b-[1px] border-l-[1px] border-r-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">4</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -131,9 +131,9 @@ export default function Invest() {
             className="flex flex-row "
             ref={rightStepsComponent}>
             {/* Step 5 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">5</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">5</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -144,9 +144,9 @@ export default function Invest() {
             </div>
 
             {/* Step 6 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">6</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">6</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>
@@ -157,9 +157,9 @@ export default function Invest() {
             </div>
 
             {/* Step 7 */}
-            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-r-[1px] border-dashed border-[#01eaf9]">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#01eaf9] bg-[#112331] p-2 text-xl font-bold text-[#01eaf9]">
-                <div className="w-full rounded-full bg-[#01eaf9] text-center text-[#112331]">7</div>
+            <div className="animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-r-[1px] border-dashed border-secondary">
+              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                <div className="w-full rounded-full bg-secondary text-center text-primary">7</div>
               </div>
               <div className="ml-12 w-1/2">
                 <h3 className="text-xl font-semibold">CHOOSE A WALLET</h3>

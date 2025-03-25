@@ -2,6 +2,7 @@
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import Carousel from '@/components/Carousel'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
@@ -47,16 +48,16 @@ export default function Top() {
     <div
       className="relative h-screen w-full"
       ref={component}>
-      <div className="absolute inset-0 bg-[#112331] "></div>
+      <div className="absolute inset-0 bg-primary "></div>
       <div className="relative z-10 mx-auto flex w-[70%] flex-col items-center justify-between text-white">
         <div className="animate-top mt-32 basis-[30%]">
           <h1 className="text-[36px] font-bold">
             TOP
-            <span className="ml-8 font-bold text-[#01eaf9]">COLLECTIONS</span>
+            <span className="ml-8 font-bold text-secondary">COLLECTIONS</span>
           </h1>
         </div>
       </div>
-      <button
+      {/* <button
         ref={prevRef}
         className="animate-top absolute bottom-0 left-32 z-10 -translate-y-1/2 rounded-full bg-gray-800 p-3 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-gray-700">
         <svg
@@ -65,20 +66,20 @@ export default function Top() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-8 font-bold text-[#01eaf9]">
+          className="size-8 font-bold text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             d="M15.75 19.5 8.25 12l7.5-7.5"
           />
         </svg>
-      </button>
+      </button> */}
 
-      <span className="animate-top absolute bottom-6 left-48 z-10 text-[36px] text-white opacity-100">
+      {/* <span className="animate-top absolute bottom-6 left-48 z-10 text-[36px] text-white opacity-100">
         <span id="current-slide">1</span>/{images.length}
       </span>
-      <span className="animate-top absolute bottom-6 left-96 z-10 text-[36px] text-white opacity-100">BIO-CODE &ldquo;BESTIA&rdquo;</span>
-      <button
+      <span className="animate-top absolute bottom-6 left-96 z-10 text-[36px] text-white opacity-100">BIO-CODE &ldquo;BESTIA&rdquo;</span> */}
+      {/* <button
         ref={nextRef}
         className="animate-top absolute bottom-0 left-[278px] z-10 -translate-y-1/2 rounded-full bg-gray-800 p-3 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-gray-700">
         <svg
@@ -87,16 +88,16 @@ export default function Top() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-8 font-bold text-[#01eaf9]">
+          className="size-8 font-bold text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             d="m8.25 4.5 7.5 7.5-7.5 7.5"
           />
         </svg>
-      </button>
-
-      <Swiper
+      </button> */}
+      <Carousel />
+      {/* <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={7}
         spaceBetween={4}
@@ -135,13 +136,13 @@ export default function Top() {
                 alt={`Collection item ${index + 1}`}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                className="object-cover transition-all duration-500 group-hover:absolute group-hover:left-1/2 group-hover:top-1/2 group-hover:z-50 group-hover:scale-125 group-hover:border-[2px] group-hover:border-[#01eaf9] group-hover:blur-none"
+                className="object-cover transition-all duration-500 group-hover:absolute group-hover:left-1/2 group-hover:top-1/2 group-hover:z-50 group-hover:scale-125 group-hover:border-[2px] group-hover:border-secondary group-hover:blur-none"
                 priority={index < 3}
               />
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </div>
   )
 }

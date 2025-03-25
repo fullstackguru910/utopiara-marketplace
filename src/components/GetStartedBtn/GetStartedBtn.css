@@ -43,7 +43,7 @@
   content: "";
   position: absolute;
   inset: 2px;
-  background-color: rgb(1, 234, 249);
+  @apply bg-secondary;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }

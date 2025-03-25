@@ -14,7 +14,7 @@ export default function Home() {
         <div className="animate-home w-[35%] rounded-[32px] bg-black bg-opacity-70 p-12">
           <h1>Your guide to the NFT world!</h1>
           <h5 className="my-4 text-[48px] font-bold">
-            <span className="text-[#01eaf9]">UTOPIARA</span>
+            <span className="text-secondary">UTOPIARA</span>
           </h5>
           <GetStartedBtn />
         </div>

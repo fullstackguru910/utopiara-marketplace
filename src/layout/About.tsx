@@ -16,18 +16,18 @@ export default function About() {
     <div
       className="relative h-screen w-full"
       ref={component}>
-      <div className="absolute inset-0 bg-[#112331] "></div>
+      <div className="absolute inset-0 bg-primary "></div>
       <div className="relative z-10 mx-auto flex w-[80%] flex-row items-center justify-between text-white">
         <div className="animate-about mt-80 basis-[30%]">
           <h1 className="text-[36px]">
             ABOUT <br></br>
-            <span className="ml-16 text-[#01eaf9]">PROJECT</span>
+            <span className="ml-16 text-secondary">PROJECT</span>
           </h1>
           <p className="ml-16 text-[16px]">
             Design project for the NFT marketplace is dedicated to creating a visually stunning, user-centric platform that serves as a
             gateway to the exciting world of non-fungible tokens(NFT).
           </p>
-          <h1 className="ml-16 mt-8 text-[24px] text-[#01eaf9]">TASK</h1>
+          <h1 className="ml-16 mt-8 text-[24px] text-secondary">TASK</h1>
           <p className="ml-16 mt-4 text-[16px]">
             Design project for the NFT marketplace is dedicated to creating a visually stunning, user-centric platform that serves as a
             gateway to the exciting world of non-fungible tokens(NFT).

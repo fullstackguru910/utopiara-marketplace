@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="flex h-[300px]  w-full flex-row items-center justify-between bg-[#112331] px-20 text-white">
+    <div className="flex h-[300px]  w-full flex-row items-center justify-between bg-primary px-20 text-white">
       <div className="basis-[25%] text-[28px] font-bold">
         UTOPIARA
         <h1 className="text-[16px] font-thin">Innovator in the field of NFTs.</h1>

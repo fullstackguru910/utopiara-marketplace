@@ -1,10 +1,18 @@
 import './Button.css'
 import React from 'react'
 
-export default function Button() {
+interface ButtonProps {
+  onClick?: () => void
+  text?: string
+  className?: string
+}
+
+export default function Button({ onClick, className }: ButtonProps) {
   return (
-    <button className="box">
-      <p className="text-button text-[#112331]">Login</p>
+    <button
+      className={className}
+      onClick={onClick}>
+      <p className="text-button text-primary">{'Login'}</p>
     </button>
   )
 }

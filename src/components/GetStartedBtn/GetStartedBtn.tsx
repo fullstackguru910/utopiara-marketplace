@@ -58,7 +58,7 @@ export default function GetStartedBtn() {
     <button
       className="box1"
       ref={buttonRef}>
-      <p className="text-button text-[#112331]">GET STARTED</p>
+      <p className="text-button text-primary">GET STARTED</p>
     </button>
   )
 }

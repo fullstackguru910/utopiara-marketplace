@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Community = () => (
   <StyledWrapper>
-    <div className="buttons text-[#112331]">
+    <div className="buttons text-primary">
       <button className="main-button">
         <svg
           width={30}

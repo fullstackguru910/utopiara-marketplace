@@ -135,11 +135,11 @@ export default function Partner() {
     <div
       className="relative min-h-screen w-full py-16"
       ref={component}>
-      <div className="absolute inset-0 bg-[#112331] "></div>
+      <div className="absolute inset-0 bg-primary "></div>
       <div className="relative z-10 mx-auto flex h-full w-[80%] flex-col items-center justify-between">
         <h1 className="animate-partner absolute left-12 top-64 z-10 text-center text-[48px] font-bold text-white">
-          <span className="text-[#01eaf9]">CREATE</span> AND
-          <br /> <span className="text-[#01eaf9]">MINT</span> NFTS
+          <span className="text-secondary">CREATE</span> AND
+          <br /> <span className="text-secondary">MINT</span> NFTS
         </h1>
 
         <div className="flex w-full flex-1 flex-col items-center justify-between gap-4">
@@ -210,17 +210,17 @@ export default function Partner() {
           {/* Partners Section */}
           <div className="w-full py-8">
             <h2 className="animate-partner mb-12 text-center text-[40px] font-bold text-white">
-              OUR <span className="text-[#01eaf9]">PARTNERS</span>
+              OUR <span className="text-secondary">PARTNERS</span>
             </h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="animate-partner-logo group flex cursor-pointer flex-row items-center gap-4 rounded-xl bg-[#061623]/50 p-6 transition-all duration-300 hover:bg-[#092a42]/50 hover:shadow-lg hover:shadow-[#01eaf9]/10 lg:flex-col lg:py-8">
+                  className="animate-partner-logo group flex cursor-pointer flex-row items-center gap-4 rounded-xl bg-[#061623]/50 p-6 transition-all duration-300 hover:bg-[#092a42]/50 hover:shadow-lg hover:shadow-secondary/10 lg:flex-col lg:py-8">
                   <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-white/5 p-2 transition-all duration-300 group-hover:bg-white/10 lg:h-24 lg:w-24">
                     {partner.logo}
                   </div>
-                  <span className="text-lg font-medium tracking-wider text-white/80 transition-all duration-300 group-hover:text-[#01eaf9] lg:text-3xl">
+                  <span className="text-lg font-medium tracking-wider text-white/80 transition-all duration-300 group-hover:text-secondary lg:text-3xl">
                     {partner.name}
                   </span>
                 </div>

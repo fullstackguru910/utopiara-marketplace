@@ -14,7 +14,7 @@ export default function Choose() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-12 text-[#01eaf9]">
+          className="size-12 text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -34,7 +34,7 @@ export default function Choose() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-12 text-[#01eaf9]">
+          className="size-12 text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -54,7 +54,7 @@ export default function Choose() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-12 text-[#01eaf9]">
+          className="size-12 text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -74,7 +74,7 @@ export default function Choose() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-12 text-[#01eaf9]">
+          className="size-12 text-secondary">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -87,13 +87,13 @@ export default function Choose() {
 
   return (
     <div className="relative min-h-screen w-full py-24">
-      <div className="absolute inset-0 bg-[#112331]"></div>
+      <div className="absolute inset-0 bg-primary"></div>
       <div className="relative z-10 mx-auto flex w-[90%] max-w-7xl flex-row lg:w-[80%]">
         <div className="mb-16 max-w-xl">
           <h1 className="text-5xl font-bold text-white md:text-6xl">
             WHY
             <br />
-            <span className="text-[#01eaf9]">CHOOSE US</span>
+            <span className="text-secondary">CHOOSE US</span>
           </h1>
           <p className="mt-6 text-base text-white/80 md:text-lg">
             Choose us as your NFT marketplace and embark on an exciting journey into the world of digital collectibles, where creativity,
@@ -105,9 +105,9 @@ export default function Choose() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center justify-between rounded-xl bg-gradient-to-r from-[#061623] to-[#092a42] p-8 transition-all duration-300 hover:from-[#092a42] hover:to-[#0d3655] hover:shadow-lg hover:shadow-[#01eaf9]/10">
+              className="group flex flex-col items-center justify-between rounded-xl bg-gradient-to-r from-[#061623] to-[#092a42] p-8 transition-all duration-300 hover:from-[#092a42] hover:to-[#0d3655] hover:shadow-lg hover:shadow-secondary/10">
               <div className="mb-6 transform transition-transform duration-300 group-hover:scale-110">{feature.icon}</div>
-              <h2 className="mb-4 text-center text-xl font-bold text-[#01eaf9]">{feature.title}</h2>
+              <h2 className="mb-4 text-center text-xl font-bold text-secondary">{feature.title}</h2>
               <p className="text-center text-sm leading-relaxed text-white/80 md:text-base">{feature.description}</p>
             </div>
           ))}
