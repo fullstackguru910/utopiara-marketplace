@@ -88,14 +88,14 @@ export default function Choose() {
   return (
     <div className="relative min-h-screen w-full py-24">
       <div className="absolute inset-0 bg-primary"></div>
-      <div className="relative z-10 mx-auto flex w-[90%] max-w-7xl flex-row lg:w-[80%]">
+      <div className="relative z-10 mx-auto flex w-[90%] max-w-7xl max-lg:flex-col lg:w-[80%] lg:flex-row">
         <div className="mb-16 max-w-xl">
-          <h1 className="text-5xl font-bold text-white md:text-6xl">
+          <h1 className="text-5xl font-bold text-white max-lg:text-2xl lg:text-6xl">
             WHY
             <br />
             <span className="text-secondary">CHOOSE US</span>
           </h1>
-          <p className="mt-6 text-base text-white/80 md:text-lg">
+          <p className="mt-6 text-base text-white/80 max-lg:text-sm lg:text-lg">
             Choose us as your NFT marketplace and embark on an exciting journey into the world of digital collectibles, where creativity,
             security, and opportunity converge.
           </p>

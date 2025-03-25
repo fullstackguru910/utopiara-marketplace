@@ -36,7 +36,7 @@ export default function Carousel() {
           perView: 2
         },
         640: {
-          perView: 1
+          perView: 3
         }
       }
     }).mount()
@@ -59,7 +59,7 @@ export default function Carousel() {
               <li className="group flex flex-col items-center justify-between">
                 <img
                   src={image}
-                  className="m-auto h-[450px] w-full max-w-full select-none border-[1px] border-secondary object-cover duration-700 group-hover:scale-125 group-hover:border-[1px]"
+                  className="m-auto w-full max-w-full select-none border-[1px] border-secondary object-cover duration-700 group-hover:scale-125 group-hover:border-[1px]  max-lg:h-[200px] lg:h-[450px]"
                 />
                 {/* <Button className="box  mt-20 opacity-0 duration-700 group-hover:block group-hover:opacity-100" /> */}
               </li>
@@ -68,7 +68,7 @@ export default function Carousel() {
         </div>
         {/*    <!-- Controls --> */}
         <div
-          className="animate-top mt-20 flex w-full items-center justify-center gap-2 p-4"
+          className="lg:animate-top mt-20 flex w-full items-center justify-center gap-2 p-4"
           data-glide-el="controls">
           <button
             className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-secondary text-slate-700 transition duration-300 hover:border-slate-900 hover:text-white focus-visible:outline-none lg:h-12 lg:w-12"
@@ -109,7 +109,7 @@ export default function Carousel() {
               />
             </svg>
           </button>
-          <span className="  z-10 text-[36px] text-white opacity-100">BIO-CODE &ldquo;BESTIA&rdquo;</span>
+          <span className="  z-10 text-white opacity-100 max-lg:text-xl lg:text-[36px]">BIO-CODE &ldquo;BESTIA&rdquo;</span>
         </div>
       </div>
       {/*<!-- End Carousel with controls outside --> */}

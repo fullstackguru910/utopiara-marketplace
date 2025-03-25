@@ -18,7 +18,7 @@ export default function About() {
       ref={component}>
       <div className="absolute inset-0 bg-primary "></div>
       <div className="relative z-10 mx-auto flex w-[80%] flex-row items-center justify-between text-white">
-        <div className="animate-about mt-80 basis-[30%]">
+        <div className="lg:animate-about basis-[30%] max-lg:mt-12 lg:mt-80">
           <h1 className="text-[36px]">
             ABOUT <br></br>
             <span className="ml-16 text-secondary">PROJECT</span>
@@ -34,7 +34,7 @@ export default function About() {
           </p>
         </div>
         <div
-          className="mt-80 flex basis-[70%] flex-row items-center justify-between space-x-2"
+          className="mt-80 flex basis-[70%] flex-row items-center justify-between space-x-2 max-lg:hidden"
           ref={imagesComponent}>
           <Image
             src="/images/1.webp"

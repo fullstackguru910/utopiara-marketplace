@@ -137,7 +137,7 @@ export default function Partner() {
       ref={component}>
       <div className="absolute inset-0 bg-primary "></div>
       <div className="relative z-10 mx-auto flex h-full w-[80%] flex-col items-center justify-between">
-        <h1 className="animate-partner absolute left-12 top-64 z-10 text-center text-[48px] font-bold text-white">
+        <h1 className="lg:animate-partner absolute z-10 text-center font-bold text-white max-lg:left-0 max-lg:top-12 max-lg:text-2xl lg:left-12 lg:top-64 lg:text-[48px]">
           <span className="text-secondary">CREATE</span> AND
           <br /> <span className="text-secondary">MINT</span> NFTS
         </h1>
@@ -148,7 +148,7 @@ export default function Partner() {
             className="grid w-full grid-cols-4 gap-4"
             ref={imagesComponent}>
             <div className="col-span-1"></div>
-            <div className="animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
+            <div className="lg:animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/4.webp"
                 alt="NFT Collection 1"
@@ -158,7 +158,7 @@ export default function Partner() {
               />
             </div>
             <div className="col-span-1"></div>
-            <div className="animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
+            <div className="lg:animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/5.webp"
                 alt="NFT Collection 2"
@@ -173,7 +173,7 @@ export default function Partner() {
           <div
             className="grid w-full grid-cols-4 gap-4"
             ref={imagesComponent}>
-            <div className="animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
+            <div className="lg:animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/6.webp"
                 alt="NFT Collection 3"
@@ -182,12 +182,12 @@ export default function Partner() {
                 className="h-full w-full transform object-cover transition-all duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="col-span-1 flex items-center justify-center p-4">
+            <div className="col-span-1 flex items-center justify-center p-4 max-lg:hidden">
               <p className="animate-partner text-center text-base font-medium leading-relaxed text-white lg:text-lg">
                 Empower your creativity by minting and selling your unique NFTs on our platform. Be an NFT creator!
               </p>
             </div>
-            <div className="animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
+            <div className="lg:animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/2.webp"
                 alt="NFT Collection 4"
@@ -196,7 +196,7 @@ export default function Partner() {
                 className="h-full w-full transform object-cover transition-all duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
+            <div className="lg:animate-image group col-span-1 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/3.webp"
                 alt="NFT Collection 5"
@@ -209,7 +209,7 @@ export default function Partner() {
 
           {/* Partners Section */}
           <div className="w-full py-8">
-            <h2 className="animate-partner mb-12 text-center text-[40px] font-bold text-white">
+            <h2 className="lg:animate-partner mb-12 text-center font-bold text-white max-lg:text-2xl lg:text-[40px]">
               OUR <span className="text-secondary">PARTNERS</span>
             </h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
