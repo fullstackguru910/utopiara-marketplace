@@ -1,9 +1,8 @@
 'use client'
 import Button from '@/components/Button/Button'
-import Checkbox from '@/components/Checkbox'
 import Link from 'next/link'
 import Login from '@/components/Login'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import Register from '@/components/Register'
 

@@ -1,6 +1,7 @@
 'use client'
 import Navbar from '@/layout/Navbar'
 import React, { useEffect, useRef, useState } from 'react'
+import Table from '@/components/Table'
 
 interface TabState {
   currentTab: number
@@ -59,7 +60,7 @@ export default function Market() {
   return (
     <>
       <Navbar />
-      <div className="bg-third mx-auto w-screen py-12">
+      <div className="mx-auto w-screen bg-third py-12">
         <div className="mx-auto w-[90%] text-4xl text-secondary">
           <div className="mb-8 text-5xl">Collection stats</div>
           <section
@@ -138,10 +139,7 @@ export default function Market() {
                 role="tabpanel"
                 aria-labelledby="tab-label-1e"
                 tabIndex={-1}>
-                <p>
-                  What is the recipe for successful achievement? To my mind there are just four essential ingredients: Choose a career you
-                  love, give it the best there is in you, seize your opportunities, and be a member of the team.
-                </p>
+                <Table />
               </div>
               <div
                 className={`px-6 py-4 ${tabSelected.currentTab === 2 ? '' : 'hidden'}`}
@@ -150,10 +148,7 @@ export default function Market() {
                 role="tabpanel"
                 aria-labelledby="tab-label-2e"
                 tabIndex={-1}>
-                <p>
-                  One must be entirely sensitive to the structure of the material that one is handling. One must yield to it in tiny details
-                  of execution, perhaps the handling of the surface or grain, and one must master it as a whole.
-                </p>
+                <Table />
               </div>
               <div
                 className={`px-6 py-4 ${tabSelected.currentTab === 3 ? '' : 'hidden'}`}
@@ -162,10 +157,7 @@ export default function Market() {
                 role="tabpanel"
                 aria-labelledby="tab-label-3e"
                 tabIndex={-1}>
-                <p>
-                  Even though there is no certainty that the expected results of our work will manifest, we have to remain committed to our
-                  work and duties; because, even if the results are slated to arrive, they cannot do so without the performance of work.
-                </p>
+                <Table />
               </div>
             </div>
           </section>
