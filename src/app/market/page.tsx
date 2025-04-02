@@ -61,8 +61,8 @@ export default function Market() {
     <>
       <Navbar />
       <div className="mx-auto  w-screen bg-primary py-12">
-        <div className="mx-auto mt-12 w-[90%] text-4xl text-secondary">
-          <div className="mb-8 text-5xl">Collection stats</div>
+        <div className="mx-auto mt-16 w-[90%] text-4xl text-secondary">
+          <div className="mb-8 text-5xl drop-shadow-[0_0_10px_rgba(1,234,249,0.8)]">Collection stats</div>
           <section
             className="max-w-full"
             aria-multiselectable="false">
