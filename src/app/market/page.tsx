@@ -60,7 +60,7 @@ export default function Market() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto w-screen bg-third py-12">
+      <div className="mx-auto mt-12 w-screen bg-primary py-12">
         <div className="mx-auto w-[90%] text-4xl text-secondary">
           <div className="mb-8 text-5xl">Collection stats</div>
           <section

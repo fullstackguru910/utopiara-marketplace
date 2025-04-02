@@ -1,4 +1,5 @@
 'use client'
+// eslint-disable-next-line no-restricted-imports
 import Checkbox from '../Checkbox'
 import React, { useEffect, useRef } from 'react'
 
@@ -74,7 +75,7 @@ export default function Login({ isShowing, setIsShowing, setIsShowing1 }: LoginP
 
   return (
     <div
-      className="fixed left-0 top-0 z-20 flex h-screen w-screen items-center justify-center bg-slate-300/20 backdrop-blur-lg"
+      className="fixed left-0 top-0 z-20 flex h-screen w-screen items-center justify-center bg-[#00000011] backdrop-blur-lg"
       aria-labelledby="header-4a content-4a"
       aria-modal="true"
       tabIndex={-1}

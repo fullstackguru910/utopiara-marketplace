@@ -4,7 +4,7 @@ import TableRow from './TableRow'
 export default function Table() {
   return (
     <div className="flex w-full flex-col justify-start text-xs">
-      <div className="flex w-full flex-row items-center justify-between">
+      <div className="flex w-full flex-row items-center justify-between text-xl">
         <div className="basis-[5%]">#</div>
         <div className="basis-[35%]">Collection</div>
         <div className="basis-[10%]">Volume</div>

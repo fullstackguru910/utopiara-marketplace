@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="flex w-full justify-between bg-primary px-20 text-white max-lg:h-auto max-lg:flex-col max-lg:items-start lg:h-[300px] lg:flex-row lg:items-center">
+    <div className="flex w-full justify-between bg-fourth px-20 text-white max-lg:h-auto max-lg:flex-col max-lg:items-start lg:h-[300px] lg:flex-row lg:items-center">
       <div className="basis-[25%] text-[28px] font-bold">
         UTOPIARA
         <h1 className="text-[16px] font-thin">Innovator in the field of NFTs.</h1>

@@ -3,23 +3,15 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import Carousel from '@/components/Carousel'
-import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { Swiper as SwiperType } from 'swiper'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 export default function Top() {
   const prevRef = useRef<HTMLButtonElement>(null)
   const nextRef = useRef<HTMLButtonElement>(null)
-  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null)
+  const [swiperInstance] = useState<SwiperType | null>(null)
   const component = useScrollAnimation('.animate-top')
-  const swiperComponent = useScrollAnimation('.animate-swiper', {
-    y: 100,
-    opacity: 0,
-    duration: 1.2
-  })
 
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
@@ -30,7 +22,8 @@ export default function Top() {
   }, [swiperInstance])
 
   return (
-    <div
+    <section
+      id="top"
       className="relative h-screen w-full"
       ref={component}>
       <div className="absolute inset-0 bg-primary "></div>
@@ -43,6 +36,6 @@ export default function Top() {
         </div>
       </div>
       <Carousel />
-    </div>
+    </section>
   )
 }

@@ -53,7 +53,7 @@ export default function Invest() {
         </h1>
 
         {/* Grid Layout: Steps on Left/Right, Image in Center */}
-        <div className="flex flex-col gap-8  md:grid-cols-3">
+        <div className="flex flex-col   md:grid-cols-3">
           {/* Left Side Steps */}
           <div
             className="flex max-lg:flex-col max-lg:space-y-4 lg:flex-row"
@@ -97,75 +97,76 @@ export default function Invest() {
               </div>
             </div>
           </div>
-
-          {/* Center Image */}
-          <div
-            className="relative flex flex-row justify-end"
-            ref={imageComponent}>
-            <div className="animate-image absolute -left-28 h-[200px] w-2/3 basis-2/3 max-lg:hidden">
-              <Image
-                src={nftImage}
-                alt="NFT Example"
-                layout="fill"
-                objectFit="cover"
-                className="absolute rounded-lg shadow-lg "
-              />
-            </div>
-
-            {/* Step 4 */}
-            <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary lg:basis-1/3">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
-                <div className="w-full rounded-full bg-secondary text-center text-primary">4</div>
+          <div className="flex flex-col gap-8 border-r-[1px] border-dashed border-secondary pt-[32px]">
+            {/* Center Image */}
+            <div
+              className="relative flex flex-row justify-end"
+              ref={imageComponent}>
+              <div className="animate-image absolute -left-28 h-[200px] w-2/3 basis-2/3 max-lg:hidden">
+                <Image
+                  src={nftImage}
+                  alt="NFT Example"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute rounded-lg shadow-lg "
+                />
               </div>
-              <div className="ml-12 w-1/2">
-                <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
-                <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
-                  Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          {/* Right Side Steps */}
-          <div
-            className="flex max-lg:flex-col max-lg:space-y-4 lg:flex-row"
-            ref={rightStepsComponent}>
-            {/* Step 5 */}
-            <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
-                <div className="w-full rounded-full bg-secondary text-center text-primary">5</div>
-              </div>
-              <div className="ml-12 w-1/2">
-                <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
-                <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
-                  Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
-                </p>
+              {/* Step 4 */}
+              <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary lg:basis-1/3">
+                <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                  <div className="w-full rounded-full bg-secondary text-center text-primary">4</div>
+                </div>
+                <div className="ml-12 w-1/2">
+                  <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
+                  <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
+                    Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Step 6 */}
-            <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
-                <div className="w-full rounded-full bg-secondary text-center text-primary">6</div>
+            {/* Right Side Steps */}
+            <div
+              className="flex max-lg:flex-col max-lg:space-y-4 lg:flex-row"
+              ref={rightStepsComponent}>
+              {/* Step 5 */}
+              <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+                <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                  <div className="w-full rounded-full bg-secondary text-center text-primary">5</div>
+                </div>
+                <div className="ml-12 w-1/2">
+                  <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
+                  <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
+                    Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
+                  </p>
+                </div>
               </div>
-              <div className="ml-12 w-1/2">
-                <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
-                <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
-                  Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
-                </p>
-              </div>
-            </div>
 
-            {/* Step 7 */}
-            <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
-              <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
-                <div className="w-full rounded-full bg-secondary text-center text-primary">7</div>
+              {/* Step 6 */}
+              <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+                <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                  <div className="w-full rounded-full bg-secondary text-center text-primary">6</div>
+                </div>
+                <div className="ml-12 w-1/2">
+                  <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
+                  <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
+                    Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
+                  </p>
+                </div>
               </div>
-              <div className="ml-12 w-1/2">
-                <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
-                <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
-                  Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
-                </p>
+
+              {/* Step 7 */}
+              <div className="lg:animate-step-left relative flex h-[200px] items-start gap-4 border-b-[1px] border-l-[1px] border-dashed border-secondary">
+                <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full border-2 border-secondary bg-primary p-2 text-xl font-bold text-secondary">
+                  <div className="w-full rounded-full bg-secondary text-center text-primary">7</div>
+                </div>
+                <div className="ml-12 w-1/2">
+                  <h3 className="max-lg:xs font-semibold lg:text-xl">CHOOSE A WALLET</h3>
+                  <p className="mt-2 text-gray-300 max-lg:text-sm lg:text-sm">
+                    Select and set up a cryptocurrency wallet that supports the blockchain on which the NFTs are issued.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

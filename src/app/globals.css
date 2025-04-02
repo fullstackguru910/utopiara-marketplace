@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* width */
 ::-webkit-scrollbar {
   /* width: 16px; */
