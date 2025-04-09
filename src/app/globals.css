@@ -9,6 +9,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+section {
+  min-height: 100vh; /* Each section takes full viewport height */
+  width: 100%;
+}
+
+/* Optional: Add snap scrolling */
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
 /* width */
 ::-webkit-scrollbar {
   /* width: 16px; */
